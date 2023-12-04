@@ -1,7 +1,7 @@
 # assignment
 Raymond Smullyan has designed many puzzles involving Knights and Knaves. Knights always tell the truth,
 whereas Knaves always lie. We refer to Knights and Knaves as Sirs. A puzzle, which is a set of English sentences,
-involves a finite number of Sirs.
+involves a finite number of Sirs./n
 A sentence starts with a capital letter and ends in a full stop, an exclamation mark,
 or a question mark, possibly followed by closing double quotes. Sir, Sirs, Sir names, Knight and Knave always
 start with a capital letter, and no other word inside a sentence is capitalised. A sentence in a puzzle contains
