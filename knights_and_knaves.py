@@ -2,7 +2,7 @@ import sys
 import re
 from collections import defaultdict
 
-# file_name = "test_3.txt"
+
 file_name = input('Which text file do you want to use for the puzzle?').removesuffix('\n')
 with open(file_name) as file:
     lines1 = file.read()
@@ -17,7 +17,7 @@ sirs = set()
 content = content.split('.')
 content = [content.strip() for content in content if content.strip() != '']
 d = {}
-# def sir_geting(ss)
+
 for i in content:
     if '"' in i:
         prev, speak, after = i.split('"')
@@ -160,25 +160,14 @@ def valid(result):
     return True
 
 
-# def valid(result):
-#     for p in d:
-#         for i in range(len(d[p])):
-#             p_index=people_index_dict[p]
-#             if result[p_index]=='1':
-#                 print(result)
-#                 print(people_mention[p][i])
-#                 print(d[p][i])
-#                 print(knight_or_knave_dict[p][i])
-#                 print(p)
-solutions = []
+
 involve_num = len(people_involve_list)
 
 for i in range(2 ** involve_num):
     if valid(f"{i:0{involve_num}b}"):
         solutions.append(f"{i:0{involve_num}b}")
 
-# solutions
-# len(solutions)
+
 
 print("The Sirs are:", " ".join(sirs))
 if len(solutions) == 1 and len(people_not_involve) == 0:
